@@ -59,7 +59,7 @@ void setup()
 }
 
 
-int32_t raw_samples[SAMPLE_BUFFER_SIZE];
+int32_t raw[SAMPLE_BUFFER_SIZE];
 void loop() {
   size_t br = 0;
   i2s_read(I2S_NUM_0, raw, sizeof(raw), &br, portMAX_DELAY);
